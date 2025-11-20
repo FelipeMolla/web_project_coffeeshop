@@ -54,11 +54,16 @@
   height: 568px;
   width: 646px;
 }
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: absolute;
+  left: 80px;
+  top: 252px;
+}
 .header__title {
   max-width: 708px;
-  position: absolute;
-  top: 183px;
-  left: 80px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -75,15 +80,90 @@ span {
   line-height: 72px;
   color: #2f80ed;
 }
-.header__description {
+.header__subtitle {
   font-family: "noto-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   max-width: 683px;
-  position: absolute;
-  left: 80px;
-  top: 28px;
   margin: 0;
+}
+.header__footer {
+  position: absolute;
+  bottom: 40px;
+  margin-top: auto;
+  border: red 1px solid;
+  left: 80px;
+}
+.paragraph {
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  margin-top: auto;
+  border: red 1px solid;
+}
+.header__footer_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: #838383;
+}
+.recipes {
+  background-color: #0a2750;
+  background-image: url(/images/background_recipes.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.recipes__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0;
+  max-width: 580px;
+  padding-top: 100px;
+  margin-left: 80px;
+}
+.recipes__subtitle {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 16px;
+  max-width: 438px;
+  margin-left: 80px;
+  margin-top: 24px;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.video-caption {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 24px;
+}
+.recipes__videos {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 215px;
+  border: 1px solid red;
+  justify-content: center;
+}
+.video {
+  width: 480px;
+  height: 273px;
 }
