@@ -1,12 +1,9 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  align-content: center;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .header {
   background-color: #ffffff;
@@ -17,15 +14,19 @@
   min-height: 720px;
   max-height: 800px;
   height: 110vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
 }
 .nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-right: 80px;
 }
 .nav__logo {
-  position: relative;
-  top: 30px;
-  left: 30px;
   width: 105px;
   height: 39px;
 }
@@ -33,9 +34,6 @@
   list-style-type: none;
   display: flex;
   gap: 20px;
-  position: relative;
-  top: 30px;
-  right: 80px;
   margin: 0;
 }
 .nav__link {
@@ -53,6 +51,7 @@
   top: 124px;
   height: 568px;
   width: 646px;
+  border: 1px solid red;
 }
 .header__content {
   display: flex;
@@ -61,9 +60,10 @@
   position: absolute;
   left: 80px;
   top: 252px;
+  border: 1px solid red;
 }
 .header__title {
-  max-width: 708px;
+  max-width: 709px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -72,7 +72,7 @@
   letter-spacing: -1px;
   margin: 0;
 }
-span {
+.header__title_blue {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
@@ -90,20 +90,29 @@ span {
   margin: 0;
 }
 .header__footer {
-  position: absolute;
-  bottom: 40px;
   margin-top: auto;
-  border: red 1px solid;
-  left: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 80px;
+  align-items: end;
 }
-.paragraph {
-  position: absolute;
-  bottom: 0px;
-  right: 80px;
-  margin-top: auto;
-  border: red 1px solid;
+.header__footer_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .header__footer_text {
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: #838383;
+  font-family: "Inter";
+  font-style: normal;
+}
+.header__footer_info {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -152,6 +161,8 @@ span {
   line-height: 30px;
   margin: 0;
   margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .recipes__videos {
   display: flex;
@@ -160,7 +171,6 @@ span {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 215px;
-  border: 1px solid red;
   justify-content: center;
 }
 .video {
