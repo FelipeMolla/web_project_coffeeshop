@@ -53,17 +53,8 @@
   top: 124px;
   height: 568px;
   width: 646px;
-  border: 1px solid red;
 }
-.header__content {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  position: absolute;
-  left: 80px;
-  top: 252px;
-  border: 1px solid red;
-}
+
 .header__title {
   max-width: 709px;
   font-family: "Inter";
@@ -72,9 +63,11 @@
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
-  margin: 0;
+  position: absolute;
+  top: 252px;
+  left: 80px;
 }
-.header__title_blue {
+.header__title-blue {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
@@ -89,7 +82,9 @@
   font-size: 20px;
   line-height: 30px;
   max-width: 683px;
-  margin: 0;
+  position: absolute;
+  top: 425.6px;
+  left: 80px;
 }
 .header__footer {
   margin-top: auto;
