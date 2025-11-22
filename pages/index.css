@@ -4,6 +4,8 @@
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .header {
   background-color: #ffffff;
@@ -80,8 +82,8 @@
   line-height: 72px;
   color: #2f80ed;
 }
-.header__subtitle {
-  font-family: "noto-serif";
+.header__description {
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -97,22 +99,13 @@
   margin-left: 80px;
   align-items: end;
 }
-.header__footer_list {
+.header__footer-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.header__footer_text {
-  margin-top: auto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
-  color: #838383;
-  font-family: "Inter";
-  font-style: normal;
-}
-.header__footer_info {
+
+.header__paragraph {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -173,7 +166,11 @@
   padding-bottom: 215px;
   justify-content: center;
 }
-.video {
+.recipes__iframe {
   width: 480px;
   height: 273px;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
 }
