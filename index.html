@@ -100,7 +100,61 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h3 class="reservation__title">Reservar uma mesa</h3>
+          <form class="form reservation__form" method="POST">
+            <fieldset class="reservation__fieldset">
+              <label class="form__label" for="nome">Nome: *</label>
+              <input
+                class="form__input"
+                id="nome"
+                type="text"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <label class="form__label" for="convidados"
+                >Número de convidados: *</label
+              >
+              <input
+                class="form__input"
+                id="convidados"
+                type="number"
+                name="Guests"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              />
+              <label class="form__label" for="dataHora">Data e hora: *</label>
+              <input
+                class="form__input"
+                id="dataHora"
+                type="datetime-local"
+                name="Data"
+                required
+              />
+
+              <label class="form__label" for="email">Seu e-mail: *</label>
+              <input
+                class="form__input"
+                id="email"
+                type="email"
+                name="e-mail"
+                placeholder="email@email.com"
+                required
+              />
+              <button class="reservation__button" type="submit">
+                Reservar uma mesa
+              </button>
+              <checkbox class="reservation__checkbox"
+                ><label class="checkbox__label"
+                  >Eu concordo com os termos de uso</label
+                ></checkbox
+              >
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
