@@ -180,20 +180,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0 120px;
 }
 .reservation__title {
+  margin: auto auto 80px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  padding-top: 100px;
   text-align: center;
 }
 .reservation__form {
   max-width: 385px;
-  margin-top: 80px;
-  margin-bottom: 120px;
 }
 .reservation__fieldset {
   margin: 0;
@@ -240,4 +239,24 @@
 }
 .reservation__button:hover {
   opacity: 70%;
+}
+.reservation__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #838383;
+  appearance: none;
+  margin-right: 12px;
+}
+.reservation__checkbox:checked {
+  background: #2f80ed url(/images/check.svg) no-repeat center;
+}
+.reservation__checkbox-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
 }
