@@ -77,9 +77,9 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="card__footer">
-                <span class="card__text">Receita Aeropress</span>
-                <span class="card__text">~5 min</span>
+              <p class="recipes__card-footer">
+                <span class="recipes__card-text">Receita Aeropress</span>
+                <span class="recipes__card-text">~5 min</span>
               </p>
             </div>
             <div class="card">
@@ -103,20 +103,20 @@
           <h3 class="reservation__title">Reservar uma mesa</h3>
           <form class="form reservation__form" method="POST">
             <fieldset class="reservation__fieldset">
-              <label class="form__label" for="nome">Nome: *</label>
+              <label class="reservation__form-label" for="nome">Nome: *</label>
               <input
-                class="form__input"
+                class="reservation__form-input"
                 id="nome"
                 type="text"
                 name="name"
                 placeholder="Nome"
                 required
               />
-              <label class="form__label" for="convidados"
+              <label class="reservation__form-label" for="convidados"
                 >Número de convidados: *</label
               >
               <input
-                class="form__input"
+                class="reservation__form-input"
                 id="convidados"
                 type="number"
                 name="Guests"
@@ -125,18 +125,22 @@
                 max="8"
                 required
               />
-              <label class="form__label" for="dataHora">Data e hora: *</label>
+              <label class="reservation__form-label" for="dataHora"
+                >Data e hora: *</label
+              >
               <input
-                class="form__input"
+                class="reservation__form-input"
                 id="dataHora"
                 type="datetime-local"
                 name="Data"
                 required
               />
 
-              <label class="form__label" for="email">Seu e-mail: *</label>
+              <label class="reservation__form-label" for="email"
+                >Seu e-mail: *</label
+              >
               <input
-                class="form__input"
+                class="reservation__form-input"
                 id="email"
                 type="email"
                 name="e-mail"
@@ -168,14 +172,14 @@
               <img
                 src="/images/facebook_white.svg"
                 alt="facebook"
-                class="social-icon"
+                class="footer__social-icon"
               /><a class="footer__social-link" href="#">Facebook</a>
             </li>
             <li class="footer__list-item">
               <img
                 src="/images/instagram_white.svg"
                 alt="instagram"
-                class="social-icon"
+                class="footer__social-icon"
               /><a class="footer__social-link" href="#">Instagram</a>
             </li>
           </ul>

@@ -30,7 +30,7 @@
   padding-top: 0;
   margin-bottom: 0;
 }
-.card__text {
+.recipes__card-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -54,7 +54,7 @@
   width: 480px;
   height: 273px;
 }
-.card__footer {
+.recipes__card-footer {
   display: flex;
   justify-content: space-between;
 }
